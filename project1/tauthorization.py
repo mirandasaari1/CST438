@@ -1,0 +1,4 @@
+consumer_key = 	bgsi3dhSOFgSv7smGbbqviIT9
+consumer_secret = 	tqg7y6GjOSzkTV3i0g56XkeORUaVanj7w0OCVSZmz694bzzro9
+access_token = 	399817303-XsV9PzDJ83iHtjYWNwjxEiHjOIg7BRI1hkoM2vNl
+access_token_secret = 	MsUvIwYuFkuLZZYRZijydLJQeU96bY8wJEuMPdchVRVDq
