@@ -1,2 +1,0 @@
-getty_access_key = e3nrn87pw37ag89qvyfqanu4
-getty_access_key_secret = 5TkQuT6sbB6JZaTwnGatumjQYXU8jqgbJM2cvNvk9zESD

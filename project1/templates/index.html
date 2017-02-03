@@ -1,11 +1,43 @@
-<link rel="stylesheet" type="css" href="css/main.css">
+<head>
+<style>
+  .box{
+     background: rgba(230,230,230,0.7);
+     width:550px;
+     height:400px;
+     padding:25px;
+     border-radius:25px;
+     margin:auto;
+     position: relative;
+  }
+  #tweet{
+    font-family: "Comic Sans MS", cursive, sans-seri ;
+    font-weight:600;
+    font-style:oblique;
+    font-size:200%;
+  }
+  #author{
+    font-weight:400;
+    font-size:150%;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  #source{
+    font-weight:100;
+    position: absolute;
+    font-size:125%;
+    bottom: 0;
+  }
+</style>
+</head>
 
-<div class="image" id="bg">
+<body background={{image_url}}>
+    <div class="box">
+      <span id=tweet>{{tweet}}</span><br>
+      <br>
+    <span id=author>@{{user}}</span><br>
+  <p><span id=source>source: {{at_link}}</span></p>
+    </div>
+<!--div layout-->
+<!--http://www.w3schools.com/css/tryit.asp?filename=trycss_transparency-->
+</body>
 
-      <img src={{getty_img}} alt="" />
-      
-      <h2><span>{{tweet}}<span class='spacer'></span><br />
-      {{user}<span class='spacer'></span>}<br />
-      {{at_link}}<span class='spacer'></span></span></h2>
 
-</div>

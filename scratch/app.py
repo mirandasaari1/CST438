@@ -3,6 +3,7 @@ import os
 from random import randint
 
 
+
 app = flask.Flask(__name__)
 
 @app.route('/')
