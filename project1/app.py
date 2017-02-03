@@ -8,10 +8,10 @@ from tweepy.models import Status
 import json
 
 app = flask.Flask(__name__)
-consumer_key = 	"bgsi3dhSOFgSv7smGbbqviIT9"
-consumer_secret = 	"tqg7y6GjOSzkTV3i0g56XkeORUaVanj7w0OCVSZmz694bzzro9"
-access_token = 	"399817303-XsV9PzDJ83iHtjYWNwjxEiHjOIg7BRI1hkoM2vNl"
-access_token_secret = 	"MsUvIwYuFkuLZZYRZijydLJQeU96bY8wJEuMPdchVRVDq"
+consumer_key = 	os.getenv("Consumer_key")
+consumer_secret = 	os.getenv("Consumer_secret")
+access_token = 	os.getenv("Access_token")
+access_token_secret = 	os.getenv("Access_secret")
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -27,7 +27,8 @@ def randomizeTweets():
 #randomize images
 def randomizeImages():
     #define header
-    my_headers = {'Api-key': 'vvdp68vnrgun32p39z5q8gmg'}
+    api = os.getenv("twitter_api")
+    my_headers = {'Api-key': 'api'}
     resolution  = {'fields': 'comp'}
     r = requests.get('https://api.gettyimages.com:443/v3/search/images/editorial?phrase=Disney%20Characters&sort_order=most_popular', headers=my_headers, params=resolution)
     #json data
